@@ -30,3 +30,9 @@ body{
     left: 10px;
     top: 250px;
 }
+.object{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    position: absolute;
+}
