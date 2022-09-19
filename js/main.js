@@ -1,9 +1,15 @@
 let game = document.getElementById("game-board");
 let player = document.getElementById("player");
 let objects = document.getElementById("objects");
-let playerTop= parseInt(
+
+// https://stackoverflow.com/questions/59275056/how-to-get-border-width-using-computedstyle-in-javascript
+let playerTop = parseInt(
   window.getComputedStyle(player).getPropertyValue("top")
 );
+let playerLeft = parseInt(
+  window.getComputedStyle(player).getPropertyValue("left")
+)
+let score = 0;
 
 
 
@@ -40,16 +46,22 @@ function createObjects(){
     object.style.left = objectLeft + 'px';
     object.style.top = objectTop + 'px';
     function moveObjects(){
-     
-      if(objectLeft < 10) {
-          alert ("game over");
+      if(objectLeft < playerLeft + 30 && objectLeft > playerLeft && objectTop > playerTop -30 && objectTop < playerTop +100 ){
+        objects.removeChild(object);
+        clearInterval(interval);
+        score += 10;
+      }
+      if(objectLeft < playerLeft) {
+          console.log("game over,your score is" + score)
+          clearInterval(interval);
+          clearTimeout(timeout);
         }
         objectLeft -= 5;
         object.style.left = objectLeft + 'px';
         object.style.top = objectTop + 'px'
     }
-    setInterval(moveObjects, 20);
-    setTimeout(createObjects, 2000);
+    let interval = setInterval(moveObjects, 20);
+    let timeout = setTimeout(createObjects, 2000);
     
 
 }
