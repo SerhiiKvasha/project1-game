@@ -1,38 +1,42 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#game-board{
-    width: 1000px;
-    height: 600px;
-    background-color: aqua;
-    position: relative;
+#game-board {
+  width: 1000px;
+  height: 600px;
+  background-color: aqua;
+  position: relative;
+  display: none;
 }
-#game-over{
-    height: 100%;
-    width: 10px;
-    background-color: blue;
-    position: absolute;
-    left: 0;
+#game-over {
+  height: 100%;
+  width: 10px;
+  background-color: blue;
+  position: absolute;
+  left: 0;
 }
-#player{
-    height: 100px;
-    width: 30px;
-    background-color: red;
-    position:absolute;
-    left: 10px;
-    top: 250px;
+#player {
+  height: 100px;
+  width: 30px;
+  background-color: red;
+  position: absolute;
+  left: 10px;
+  top: 250px;
 }
-.object{
-    width: 30px;
-    height: 30px;
-    background-color: black;
-    position: absolute;
+.object {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
 }
+
+
