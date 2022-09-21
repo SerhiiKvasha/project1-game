@@ -102,17 +102,31 @@ a:hover {
 #live-score{
   position: relative;
   color:white;
-  right: 150px;
+  display: none;
+  position:absolute;
+  top: 50px;
+  margin-right: 300px;
 }
 #life1 {
   width: 40px;
-  position: relative;
+  position: absolute;
+  display: none;
+  top:50px;
+  margin-left: 100px;
 }
 #life2{
   width: 40px;
-  position: relative;
+  position: absolute;
+  display: none;
+  top:50px;
+  margin-left: 150px;
+  
 }
 #life3{
   width: 40px;
-  position: relative;
+  position: absolute;
+  display:none;
+  margin-left: 50px;
+  top: 50px;
 }
+

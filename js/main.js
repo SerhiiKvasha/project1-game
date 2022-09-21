@@ -72,6 +72,7 @@ function createObjects() {
       document.getElementById("life1").remove();
     }
     if (lives === 0) {
+      document.getElementById("life3").remove();
       gameOver();
     }
 
@@ -88,6 +89,11 @@ function startGame() {
   game.style.display = "block";
   document.getElementById("start-game").style.display = "none";
   document.getElementById("end-game").style.display = "none";
+  document.getElementById("life1").style.display = "block";
+  document.getElementById("life2").style.display = "block";
+  document.getElementById("life3").style.display = "block";
+  document.getElementById("live-score").style.display = "block";
+  
   createObjects();
 }
 function gameOver() {
