@@ -44,6 +44,9 @@ function createObjects() {
   object.style.left = objectLeft + "px";
   object.style.top = objectTop + "px";
   function moveObjects() {
+    objectLeft -= 5;
+    object.style.left = objectLeft + "px";
+    object.style.top = objectTop + "px";
     if (
       objectLeft < playerLeft + 30 &&
       objectLeft > playerLeft &&
@@ -64,12 +67,14 @@ function createObjects() {
     if (lives === 0) {
       gameOver();
     }
-    objectLeft -= 5;
-    object.style.left = objectLeft + "px";
-    object.style.top = objectTop + "px";
+
+    if (score >= 100) {
+      objectLeft--;
+    }
   }
+
   let interval = setInterval(moveObjects, 20);
-  let timeout = setTimeout(createObjects, 2000);
+  let timeout = setTimeout(createObjects, 1800);
 }
 
 function startGame() {

@@ -8,18 +8,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(../images/uwp1037723.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #game-board {
   width: 1000px;
   height: 600px;
-  background-color: aqua;
   position: relative;
   display: none;
+  
 }
 #game-over {
   height: 100%;
   width: 10px;
-  background-color: blue;
+
   position: absolute;
   left: 0;
 }
@@ -34,9 +38,7 @@ body {
 .object {
   width: 30px;
   height: 30px;
-  background-color: black;
+  background-color: white;
   position: absolute;
   border-radius: 50%;
 }
-
-
