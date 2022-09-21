@@ -8,14 +8,30 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
   </head>
   <body>
-    <div id="start-game"><a href="#" onclick="startGame()">Start Game</a>
+    <div id="start-game">
+      <h2>In the year 2052, the mankind has faced the biggest threat of all times. Deadly asteroids moving toward the Earth at unreal speeds. Goverments of the countries decided to send the only hero who can save the world crushing asteroids with his ENORMOUS head!</h2>
+        <h3>Instructions:</h3>
+        <p>To move the player push buttons "up" and "down"</p>
+        <p>You have to destroy the asteroids and get the high score</p>
+        <p>Dont miss any asteroid, becase the Earth has only 3 lives</p>
+        
+        <a href="#" onclick="startGame()">Start Game</a>
+       
+      
     </div>
     <div id="end-game" style="display:none">
-      <h1>Good job bro, universe is destroyed</h1>
-      <a href="#" onclick="tryAgain()" >Try to save it again...</a>
+      <h2>Good job bro, Earth is doomed</h2>
+      <p id="players-score">Your score is:</p>
+      <p>Well,at least you've tried...</p>
+    
+      <a href="#" onclick="tryAgain()" >Push here to try and save it again</a>
     
     </div>
     <div id="game-board">
+      <h1 id="live-score">SCORE: 0</h1>
+      <img id="life1" src="./images/life.png"/>
+      <img id ="life2" src="./images/life.png"/>
+      <img id="life3" src="./images/life.png"/>
       <div id="game-over"></div>
       <div id="player"></div>
       <div id="objects"></div>

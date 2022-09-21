@@ -8,37 +8,111 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/uwp1037723.jpeg);
+  background-image: url(../images/bg.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #game-board {
   width: 1000px;
   height: 600px;
   position: relative;
   display: none;
+}
+h2 {
+  margin-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
   
 }
-#game-over {
-  height: 100%;
-  width: 10px;
+h3 {
+ margin-top: 100px;
+}
+p{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#start-game {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  background-color: rgb(31, 28, 34);
+  border-radius: 10%;
+}
 
-  position: absolute;
-  left: 0;
+#start-game a {
+  position: relative;
+  font-size: 2em;
+  text-decoration: none;
+  color: bisque;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid;
+  border-radius: 50%;
+  
+}
+a:hover {
+  background-color: aquamarine;
+}
+#end-game {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  background-color: rgb(31, 28, 34);
+  border-radius: 10%;
+}
+#end-game a {
+  font-size: 2em;
+  text-decoration: none;
+  color: bisque;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 50px;
 }
 #player {
   height: 100px;
-  width: 30px;
-  background-color: red;
+  width: 60px;
+  background-image: url(../images/player.png);
   position: absolute;
   left: 10px;
   top: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .object {
-  width: 30px;
-  height: 30px;
-  background-color: white;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/asteroid.png);
   position: absolute;
-  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#live-score{
+  position: relative;
+  color:white;
+  right: 150px;
+}
+#life1 {
+  width: 40px;
+  position: relative;
+}
+#life2{
+  width: 40px;
+  position: relative;
+}
+#life3{
+  width: 40px;
+  position: relative;
 }

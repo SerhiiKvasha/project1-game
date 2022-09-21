@@ -57,6 +57,7 @@ function createObjects() {
       clearInterval(interval);
       clearTimeout(timeout);
       score += 10;
+      liveScore();
     }
     if (objectLeft < playerLeft) {
       clearInterval(interval);
@@ -64,12 +65,18 @@ function createObjects() {
       objects.removeChild(object);
       lives--;
     }
+    if (lives === 2){
+      document.getElementById("life2").remove();
+    }
+    if (lives === 1){
+      document.getElementById("life1").remove();
+    }
     if (lives === 0) {
       gameOver();
     }
 
     if (score >= 100) {
-      objectLeft--;
+      objectLeft -= 3;
     }
   }
 
@@ -87,8 +94,17 @@ function gameOver() {
   document.getElementById("start-game").style.display = "none";
   game.style.display = "none";
   document.getElementById("end-game").style.display = "block";
+  displayScore();
 }
 function tryAgain() {
   location.reload();
   return;
+}
+
+function displayScore() {
+  document.getElementById("players-score").innerHTML =
+    "Your score is:" + " " + score;
+}
+function liveScore() {
+  document.getElementById("live-score").innerHTML = "SCORE:" + " " + score;
 }
