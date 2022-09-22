@@ -101,6 +101,7 @@ function gameOver() {
   document.getElementById("start-game").style.display = "none";
   game.style.display = "none";
   document.getElementById("end-game").style.display = "block";
+  document.getElementById("live-score").style.display = "none";
   displayScore();
 }
 function tryAgain() {

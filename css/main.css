@@ -129,4 +129,11 @@ a:hover {
   margin-left: 50px;
   top: 50px;
 }
-
+#music{
+  position: absolute;
+  top: 40px;
+  margin-left: 600px;
+  width: 200px;
+  height: 30px;
+  color: blue;
+ 
