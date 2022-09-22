@@ -94,7 +94,7 @@ function startGame() {
   document.getElementById("life2").style.display = "block";
   document.getElementById("life3").style.display = "block";
   document.getElementById("live-score").style.display = "block";
-  
+  document.getElementById("audio").style.display = "none"
   createObjects();
 }
 function gameOver() {
