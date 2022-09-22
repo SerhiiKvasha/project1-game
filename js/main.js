@@ -65,6 +65,9 @@ function createObjects() {
       objects.removeChild(object);
       lives--;
     }
+    if (score >= 100) {
+      objectLeft -= 3;
+    }
     if (lives === 2){
       document.getElementById("life2").remove();
     }
@@ -76,9 +79,7 @@ function createObjects() {
       gameOver();
     }
 
-    if (score >= 100) {
-      objectLeft -= 3;
-    }
+    
   }
 
   let interval = setInterval(moveObjects, 20);
