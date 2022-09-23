@@ -68,18 +68,16 @@ function createObjects() {
     if (score >= 100) {
       objectLeft -= 3;
     }
-    if (lives === 2){
+    if (lives === 2) {
       document.getElementById("life2").remove();
     }
-    if (lives === 1){
+    if (lives === 1) {
       document.getElementById("life1").remove();
     }
     if (lives === 0) {
       document.getElementById("life3").remove();
       gameOver();
     }
-
-    
   }
 
   let interval = setInterval(moveObjects, 20);
@@ -94,7 +92,7 @@ function startGame() {
   document.getElementById("life2").style.display = "block";
   document.getElementById("life3").style.display = "block";
   document.getElementById("live-score").style.display = "block";
-  document.getElementById("audio").style.display = "none"
+  document.getElementById("audio").style.display = "none";
   createObjects();
 }
 function gameOver() {

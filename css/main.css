@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Orbitron&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Orbitron&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +14,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Orbitron', sans-serif;
-  
+  font-family: "Orbitron", sans-serif;
 }
 #game-board {
   width: 1000px;
@@ -59,7 +58,7 @@ p {
   border-radius: 50%;
   top: 30px;
 }
-#end-game a{
+#end-game a {
   position: relative;
   margin-left: 150px;
 }
@@ -142,10 +141,9 @@ a:hover {
   height: 20px;
   left: 425px;
 }
-#earth{
+#earth {
   width: 150px;
   position: relative;
-  top:200px;
+  top: 200px;
   right: 400px;
 }
-
