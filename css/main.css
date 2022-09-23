@@ -59,6 +59,10 @@ p {
   border-radius: 50%;
   top: 30px;
 }
+#end-game a{
+  position: relative;
+  margin-left: 150px;
+}
 a:hover {
   background-color: aquamarine;
 }
@@ -138,3 +142,10 @@ a:hover {
   height: 20px;
   left: 425px;
 }
+#earth{
+  width: 150px;
+  position: relative;
+  top:200px;
+  right: 400px;
+}
+
